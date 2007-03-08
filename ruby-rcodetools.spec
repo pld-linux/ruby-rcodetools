@@ -1,4 +1,5 @@
 Summary:	A tiny web framework
+Summary(pl.UTF-8):	Mały szkielet aplikacji WWW
 Name:		ruby-rcodetools
 Version:	0.4.0
 Release:	1
@@ -25,6 +26,18 @@ Currently, rcodetools comprises:
 - rct-meth-args: precise method info (meta-prog. aware) and TAGS
   generation
 
+%description -l pl.UTF-8
+rcodetools jest zbiorem narzędzi do manipulacji kodem języka Ruby.
+Zawiera xmpfilter, niezależne od edytora Ruby narzędzia pomocnicze
+dla programistów oraz interfejsy do emacs i vim.
+
+Obecnie rcodetools zapewnia:
+- xmpfilter: automagiczne asercje Test::Unit/oczekiwania RSpec i
+  komentowanie kodu
+- rct-complete: dokładne w 100% dopełnianie metod/klas/stałych itp.
+- rct-doc: przeglądarka dokumentacji i nawigator kodu
+- rct-meth-args: precyzyjna generacja informacji o metodach (z
+  uwzględnieniem meta-prog.) oraz TAGS
 
 %prep
 %setup -q -n rcodetools-%{version}
