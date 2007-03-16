@@ -28,15 +28,15 @@ Currently, rcodetools comprises:
 
 %description -l pl.UTF-8
 rcodetools jest zbiorem narzędzi do manipulacji kodem języka Ruby.
-Zawiera xmpfilter, niezależne od edytora Ruby narzędzia pomocnicze
-dla programistów oraz interfejsy do emacs i vim.
+Zawiera xmpfilter, niezależne od edytora narzędzia pomocnicze dla
+programistów Ruby'ego oraz interfejsy do emacsa i vima.
 
 Obecnie rcodetools zapewnia:
 - xmpfilter: automagiczne asercje Test::Unit/oczekiwania RSpec i
   komentowanie kodu
 - rct-complete: dokładne w 100% dopełnianie metod/klas/stałych itp.
 - rct-doc: przeglądarka dokumentacji i nawigator kodu
-- rct-meth-args: precyzyjna generacja informacji o metodach (z
+- rct-meth-args: precyzyjne generowanie informacji o metodach (z
   uwzględnieniem meta-prog.) oraz TAGS
 
 %prep
