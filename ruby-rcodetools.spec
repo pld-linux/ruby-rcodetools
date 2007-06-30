@@ -1,12 +1,12 @@
 Summary:	A tiny web framework
 Summary(pl.UTF-8):	Mały szkielet aplikacji WWW
 Name:		ruby-rcodetools
-Version:	0.4.0
+Version:	0.7.0
 Release:	1
 License:	Ruby's
 Group:		Development/Languages
 Source0:	http://eigenclass.org/static/rcodetools/rcodetools-%{version}.tar.gz
-# Source0-md5:	514837196e2a9aab507dd325bc5753af
+# Source0-md5:	7c2c4c6e649cabdc76aee684b76a1f19
 URL:		http://eigenclass.org/hiki.rb?rcodetools
 BuildRequires:	rake
 BuildRequires:	rpmbuild(macros) >= 1.277
@@ -51,6 +51,7 @@ ruby setup.rb setup
 
 rdoc --op rdoc lib
 rdoc --ri --op ri lib
+rm ri/created.rid
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -70,4 +71,5 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{ruby_rubylibdir}/rcodetools
 %{ruby_rubylibdir}/method_analyzer.rb
+%{ruby_rubylibdir}/ruby_toggle_file.rb
 %{ruby_ridir}/*
