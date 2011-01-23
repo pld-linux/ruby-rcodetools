@@ -8,8 +8,8 @@ Group:		Development/Languages
 Source0:	http://eigenclass.org/static/rcodetools/rcodetools-%{version}.tar.gz
 # Source0-md5:	7c2c4c6e649cabdc76aee684b76a1f19
 URL:		http://eigenclass.org/hiki.rb?rcodetools
-BuildRequires:	rake
 BuildRequires:	rpmbuild(macros) >= 1.277
+BuildRequires:	ruby-rake
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
